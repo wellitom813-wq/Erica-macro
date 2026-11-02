@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#21191d">
+<meta name="description" content="Espaço Érica Magro — manicure, pedicure e podologia. Agende seu momento de cuidado.">
+<title>Espaço Érica Magro | Beleza, cuidado e bem-estar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--dark:#21191d;--dark2:#302329;--cream:#faf6f2;--paper:#fffdfa;--rose:#b7838c;--rose-light:#ead4d5;--gold:#b99a69;--muted:#81747a;--line:#e9dedb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--dark);font-family:"DM Sans",sans-serif}a{text-decoration:none;color:inherit}img{display:block;max-width:100%}
+.topline{height:34px;background:var(--dark);color:#eadfe0;display:flex;align-items:center;justify-content:center;padding:0 12px;font-size:9px;letter-spacing:2.5px;text-transform:uppercase}
+header{position:sticky;top:0;z-index:20;background:rgba(250,246,242,.94);backdrop-filter:blur(14px);border-bottom:1px solid #e9dfdc}
+.nav{max-width:1160px;margin:auto;padding:17px 25px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}.monogram{height:45px;width:45px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--rose);font:25px "Playfair Display"}.brand strong{display:block;font:21px "Playfair Display";font-weight:500}.brand small{display:block;margin-top:3px;color:var(--muted);font-size:8px;letter-spacing:2.7px;text-transform:uppercase}
+.navlinks{display:flex;align-items:center;gap:27px;font-size:11px;color:#665960}.navlinks a:hover{color:var(--rose)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 21px;background:var(--dark);color:white;border:1px solid var(--dark);font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;transition:.2s;cursor:pointer}.btn:hover{background:var(--rose);border-color:var(--rose)}.btn-outline{background:transparent;color:var(--dark);border-color:#cdb6b6}.btn-outline:hover{color:white}
+.hero{max-width:1160px;margin:auto;padding:75px 25px 82px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:68px}
+.kicker{color:var(--rose);font-size:9px;letter-spacing:3px;font-weight:700;text-transform:uppercase}
+h1,h2,h3{font-family:"Playfair Display",serif;font-weight:500}
+.hero h1{font-size:clamp(48px,6vw,76px);line-height:1.02;letter-spacing:-1.8px;margin:20px 0}.hero h1 em{color:var(--rose);font-weight:400}.hero-copy>p{max-width:440px;color:var(--muted);font-size:13px;line-height:2}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.signature{margin-top:38px;color:var(--muted);font-size:10px;letter-spacing:.5px}.signature span{color:var(--gold);letter-spacing:4px;margin-right:9px}
+.hero-visual{height:535px;position:relative}.hero-visual>img{height:100%;width:87%;margin-left:auto;object-fit:cover;border-radius:210px 210px 2px 2px}.hero-label{position:absolute;left:0;bottom:32px;background:var(--paper);padding:21px 24px;box-shadow:0 14px 45px #35232918;max-width:205px}.hero-label b{font:20px "Playfair Display";font-weight:500}.hero-label small{display:block;margin-top:7px;color:var(--muted);font-size:10px;line-height:1.6}
+.section{padding:82px 25px}.wrap{max-width:1160px;margin:auto}.heading{text-align:center;max-width:630px;margin:0 auto 43px}.heading h2{font-size:clamp(34px,4vw,48px);margin:12px 0}.heading p{font-size:12px;line-height:1.9;color:var(--muted);margin:0}
+.services{background:var(--paper)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service{background:white;border:1px solid var(--line);transition:.25s}.service:hover{transform:translateY(-5px);box-shadow:0 15px 35px #39262b12}.service-photo{height:270px;overflow:hidden;background:#eee}.service-photo img{height:100%;width:100%;object-fit:cover;transition:transform .5s}.service:hover img{transform:scale(1.04)}.service-body{padding:24px 23px 25px}.service-no{color:var(--gold);font-size:9px;letter-spacing:2px}.service h3{font-size:27px;margin:8px 0}.service p{color:var(--muted);font-size:11px;line-height:1.8;min-height:60px;margin:0 0 18px}.service-link{display:inline-block;border-bottom:1px solid var(--rose-light);padding-bottom:5px;color:var(--rose);font-size:9px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center}.about-image{height:490px;width:100%;object-fit:cover}.about-text h2{font-size:47px;line-height:1.12;margin:15px 0 20px}.about-text p{color:var(--muted);font-size:12px;line-height:2}.features{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:25px}.feature{border-left:2px solid var(--rose-light);padding:5px 0 5px 13px;font-size:10px;font-weight:600}
+.gallery{background:#f0e7e4}.gallery-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;grid-template-rows:205px 205px;gap:12px}.gallery-grid img{width:100%;height:100%;object-fit:cover}.gallery-grid img:first-child{grid-row:span 2}
+.booking{background:var(--dark);color:#fff}.booking .heading p{color:#c8b9be}.booking .kicker{color:#d8aeb5}.booking-layout{max-width:960px;margin:auto;display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start}.booking-copy h3{font-size:34px;line-height:1.2;margin:0 0 17px}.booking-copy p{color:#c8b9be;font-size:12px;line-height:1.9}.booking-copy .note{margin-top:24px;color:#e6d7da;font-size:11px;line-height:2}
+.form-card{background:var(--paper);color:var(--dark);padding:30px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}.field{display:flex;flex-direction:column;gap:7px;margin-bottom:15px}.field.full{grid-column:1/-1}.field label{font-size:9px;letter-spacing:1.2px;text-transform:uppercase;font-weight:700;color:#766970}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#fff;padding:13px 12px;font:11px "DM Sans";color:var(--dark);outline:none;border-radius:0}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--rose)}.form-card .btn{width:100%;margin-top:4px}.fineprint{text-align:center;color:var(--muted);font-size:9px;line-height:1.7;margin:12px 0 0}
+footer{background:#191317;color:#eee4e5;padding:38px 25px}.footer-inner{max-width:1160px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px;flex-wrap:wrap}.footer-title{font:24px "Playfair Display"}.footer-inner p{font-size:9px;line-height:1.8;color:#bcaeb2}.copyright{font-size:9px;color:#bcaeb2}
+.whatsapp{position:fixed;right:20px;bottom:20px;z-index:30;width:54px;height:54px;border-radius:50%;background:#238c61;color:white;display:grid;place-items:center;font-size:22px;box-shadow:0 8px 24px #0003}
+@media(max-width:820px){.navlinks{gap:14px}.navlinks a:not(.nav-button){display:none}.hero{grid-template-columns:1fr;gap:35px;padding-top:52px}.hero-visual{height:420px}.service-grid{grid-template-columns:1fr 1fr}.about{gap:35px}.booking-layout{grid-template-columns:1fr;gap:25px}}
+@media(max-width:560px){.nav{padding:13px 17px}.brand strong{font-size:18px}.nav-button{padding:12px 13px;font-size:8px}.hero{padding:47px 19px 62px}.hero h1{font-size:53px}.hero-visual{height:350px}.hero-visual>img{width:90%}.section{padding:65px 19px}.service-grid{grid-template-columns:1fr}.service-photo{height:250px}.about{grid-template-columns:1fr}.about-image{height:340px}.about-text h2{font-size:40px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:175px 135px}.gallery-grid img:first-child{grid-column:span 2;grid-row:auto}.form-card{padding:22px 17px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="topline">Beleza com delicadeza · Cuidado em cada detalhe</div>
+<header>
+  <div class="nav">
+    <a class="brand" href="#inicio"><span class="monogram">É</span><span><strong>Érica Magro</strong><small>Espaço de Beleza & Cuidado</small></span></a>
+    <nav class="navlinks"><a href="#servicos">Procedimentos</a><a href="#espaco">O espaço</a><a href="#galeria">Galeria</a><a class="btn nav-button" href="#agendar">Agendar horário</a></nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-copy">
+    <div class="kicker">Seu momento. Seu cuidado. Sua beleza.</div>
+    <h1>Um cuidado<br>que faz <em>bem.</em></h1>
+    <p>Um espaço pensado para valorizar sua beleza, renovar sua autoestima e oferecer uma experiência acolhedora. Permita-se viver esse momento só seu.</p>
+    <div class="actions"><a class="btn" href="#agendar">Agende seu momento</a><a class="btn btn-outline" href="#servicos">Conheça os procedimentos</a></div>
+    <div class="signature"><span>✦ ✦ ✦</span> Atendimento atencioso e personalizado</div>
+  </div>
+  <div class="hero-visual">
+    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1100&q=88" alt="Detalhe de manicure e unhas bem cuidadas">
+    <div class="hero-label"><b>Você merece<br>esse cuidado.</b><small>Beleza, bem-estar e carinho em cada atendimento.</small></div>
+  </div>
+</section>
+
+<section class="section services" id="servicos">
+  <div class="wrap">
+    <div class="heading"><div class="kicker">Nossos atendimentos</div><h2>Procedimentos</h2><p>Conheça os cuidados disponíveis no Espaço Érica Magro. Escolha seu procedimento e solicite um horário.</p></div>
+    <div class="service-grid">
+      <article class="service">
+        <div class="service-photo"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=88" alt="Manicure: mãos e unhas com esmaltação cuidadosa"></div>
+        <div class="service-body"><div class="service-no">01 · CUIDADO DAS MÃOS</div><h3>Manicure</h3><p>Um cuidado especial para suas mãos e unhas, com delicadeza, capricho e acabamento impecável.</p><a class="service-link" href="#agendar">Solicitar agendamento →</a></div>
+      </article>
+      <article class="service">
+        <div class="service-photo"><img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=900&q=88" alt="Pedicure: cuidado e beleza dos pés e unhas dos pés"></div>
+        <div class="service-body"><div class="service-no">02 · CUIDADO DOS PÉS</div><h3>Pedicure</h3><p>Momento de cuidado para os pés e unhas dos pés, com atenção ao conforto e à beleza.</p><a class="service-link" href="#agendar">Solicitar agendamento →</a></div>
+      </article>
+      <article class="service">
+        <div class="service-photo"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=88" alt="Podologia e cuidado profissional dos pés"></div>
+        <div class="service-body"><div class="service-no">03 · SAÚDE E BEM-ESTAR</div><h3>Podologia</h3><p>Cuidado especializado voltado à saúde, ao conforto e ao bem-estar dos seus pés.</p><a class="service-link" href="#agendar">Solicitar agendamento →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="espaco">
+  <div class="wrap about">
+    <img class="about-image" src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1100&q=88" alt="Ambiente elegante e acolhedor de um espaço de beleza">
+    <div class="about-text"><div class="kicker">Um espaço para você</div><h2>Seu bem-estar é parte da beleza.</h2><p>No Espaço Érica Magro, cada detalhe é pensado para tornar seu atendimento mais leve, acolhedor e especial. Aqui, você encontra um momento para desacelerar e dedicar atenção a si mesma.</p><p>Será um prazer receber você.</p><div class="features"><div class="feature">Atendimento com hora marcada</div><div class="feature">Cuidado personalizado</div><div class="feature">Atenção aos detalhes</div><div class="feature">Ambiente acolhedor</div></div></div>
+  </div>
+</section>
+
+<section class="section gallery" id="galeria">
+  <div class="wrap"><div class="heading"><div class="kicker">Inspiração e delicadeza</div><h2>Galeria</h2><p>Um olhar sobre o universo de beleza e cuidado do nosso espaço.</p></div>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=88" alt="Inspiração de manicure">
+      <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=700&q=88" alt="Inspiração de pedicure">
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=88" alt="Cuidado e bem-estar">
+      <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=700&q=88" alt="Ambiente de beleza">
+      <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=700&q=88" alt="Detalhe de unhas">
+    </div>
+  </div>
+</section>
+
+<section class="section booking" id="agendar">
+  <div class="wrap"><div class="heading"><div class="kicker">Reserve seu momento</div><h2>Agende seu horário</h2><p>Informe seus dados e o procedimento desejado. Seu pedido será encaminhado para o WhatsApp do espaço.</p></div>
+    <div class="booking-layout">
+      <div class="booking-copy"><h3>Vai ser um prazer cuidar de você.</h3><p>Escolha a data e o horário que prefere. A equipe entrará em contato para confirmar a disponibilidade.</p><div class="note">✦ Solicitação simples e rápida<br>✦ Atendimento mediante confirmação<br>✦ Um momento especial reservado para você</div></div>
+      <form class="form-card" id="bookingForm">
+        <div class="form-grid">
+          <div class="field full"><label for="name">Nome completo</label><input id="name" name="name" placeholder="Seu nome" required></div>
+          <div class="field"><label for="phone">Seu WhatsApp</label><input id="phone" name="phone" type="tel" placeholder="(00) 00000-0000" required></div>
+          <div class="field"><label for="service">Procedimento</label><select id="service" name="service" required><option value="">Selecione</option><option>Manicure</option><option>Pedicure</option><option>Podologia</option></select></div>
+          <div class="field"><label for="date">Data desejada</label><input id="date" name="date" type="date" required></div>
+          <div class="field"><label for="time">Horário desejado</label><select id="time" name="time" required><option value="">Selecione</option><option>08:00</option><option>08:30</option><option>09:00</option><option>09:30</option><option>10:00</option><option>10:30</option><option>11:00</option><option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option><option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option><option>17:00</option></select></div>
+          <div class="field full"><label for="notes">Observações (opcional)</label><textarea id="notes" name="notes" rows="2" placeholder="Se desejar, deixe uma observação"></textarea></div>
+        </div>
+        <button class="btn" type="submit">Enviar solicitação pelo WhatsApp →</button>
+        <p class="fineprint">O horário será confirmado após o retorno do espaço. Este formulário não confirma automaticamente a reserva.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="footer-inner"><div><div class="footer-title">Érica Magro</div><p>Espaço de Beleza & Cuidado<br>Um momento especial para você.</p></div><div><a class="btn btn-outline" href="#agendar">Agendar atendimento</a><p class="copyright">© <span id="year"></span> Espaço Érica Magro · Todos os direitos reservados.</p></div></div></footer>
+<a class="whatsapp" href="#agendar" aria-label="Ir para agendamento">✆</a>
+<script>
+  // Número de demonstração mantido da primeira versão. Confirme com a cliente antes da publicação oficial.
+  // Formato: código do país + DDD + número, somente dígitos.
+  const WHATSAPP_NUMBER = "5516997279197";
+  const dateField = document.getElementById("date");
+  const now = new Date();
+  dateField.min = new Date(now.getTime() - now.getTimezoneOffset()*60000).toISOString().slice(0,10);
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("bookingForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    const d = new FormData(this);
+    const [y,m,day] = d.get("date").split("-");
+    const message = [
+      "Olá! Gostaria de solicitar um agendamento no Espaço Érica Magro.",
+      "",
+      `Nome: ${d.get("name")}`,
+      `WhatsApp: ${d.get("phone")}`,
+      `Procedimento: ${d.get("service")}`,
+      `Data desejada: ${day}/${m}/${y}`,
+      `Horário desejado: ${d.get("time")}`,
+      d.get("notes") ? `Observações: ${d.get("notes")}` : "",
+      "",
+      "Aguardo a confirmação. Obrigada!"
+    ].filter(Boolean).join("\\n");
+    window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message), "_blank", "noopener");
+  });
+</script>
+</body>
+</html>
