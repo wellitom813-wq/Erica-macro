@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#2b1b1d">
+<meta name="description" content="Espaço Érica Magro — manicure, pedicure, podologia e alongamentos.">
+<title>Espaço Érica Magro | Manicure & Podologia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+<style>
+:root{--dark:#2b1b1d;--dark2:#493033;--gold:#b9824c;--gold2:#e3c29c;--cream:#fffaf6;--rose:#f4e7e2;--text:#382729;--muted:#806f6a;--line:#eadbd2;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--script:'Parisienne',cursive}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--text);font-family:var(--sans)}img{display:block;width:100%;object-fit:cover}a{color:inherit;text-decoration:none}
+.topbar{background:var(--dark);color:#f7ece5;text-align:center;padding:9px 15px;font-size:10px;letter-spacing:.13em;text-transform:uppercase}.topbar span{color:var(--gold2)}
+header{position:sticky;top:0;z-index:10;background:rgba(255,250,246,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{max-width:1160px;margin:auto;min-height:82px;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px}.monogram{height:48px;width:48px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font:29px var(--serif)}.brand-name{font:29px var(--script);line-height:1}.brand-sub{display:block;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:5px}.navlinks{display:flex;align-items:center;gap:23px;font-size:12px;font-weight:600}.navlinks>a:not(.btn):hover{color:var(--gold)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 23px;border-radius:30px;background:linear-gradient(135deg,#d0a06e,#a96f3d);color:#fff;font-size:12px;font-weight:700;box-shadow:0 8px 20px #a96f3d26;transition:.2s}.btn:hover{transform:translateY(-2px)}.menu{display:none;border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 12px;font-size:20px;color:var(--dark)}
+.hero{min-height:590px;display:flex;align-items:center;position:relative;background:linear-gradient(90deg,rgba(255,248,243,.98) 0%,rgba(255,248,243,.91) 42%,rgba(255,248,243,.15) 76%),url('https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1900&q=85') center 48%/cover}.hero-inner{max-width:1160px;width:100%;margin:auto;padding:78px 30px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#a66f3e}.hero h1{max-width:580px;margin:18px 0;font:500 clamp(45px,6vw,72px)/1.05 var(--serif);letter-spacing:-.03em}.hero h1 em{font:normal 1.15em var(--script);color:#ad7848}.hero p{max-width:430px;color:#6e5b55;font-size:14px;line-height:1.9}.hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:28px}.outline{border:1px solid var(--gold);border-radius:30px;padding:13px 20px;font-size:12px;font-weight:700}.hero-caption{margin-top:22px;font-size:11px;color:#75625b}.hero-caption b{color:#27835c}
+.trust{background:var(--dark);color:#fff4eb;padding:22px 20px}.trust-inner{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.trust-item{text-align:center;font-size:11px;line-height:1.5}.trust-item strong{display:block;color:var(--gold2);font:25px var(--serif);margin-bottom:4px}
+.section{padding:78px 22px}.wrap{max-width:1120px;margin:auto}.heading{text-align:center;max-width:650px;margin:0 auto 38px}.heading .eyebrow{margin-bottom:10px}.heading h2{font:500 clamp(30px,4vw,43px)/1.15 var(--serif);margin:0}.heading p{font-size:13px;line-height:1.8;color:var(--muted);margin:12px auto 0}
+.services{background:linear-gradient(#fffaf6,#f7ece7)}.service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.service-card{background:white;border:1px solid var(--line);border-radius:15px;overflow:hidden;box-shadow:0 12px 30px #432c2510}.service-card img{height:205px;object-fit:cover}.service-copy{padding:19px 17px 21px}.service-copy small{color:var(--gold);font-size:9px;font-weight:700;letter-spacing:.15em}.service-copy h3{font:500 22px var(--serif);margin:7px 0}.service-copy p{min-height:60px;font-size:11px;line-height:1.7;color:var(--muted);margin:0 0 13px}.service-copy a{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#a46c3b}
+.about{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:55px}.about-photo{position:relative;padding:0 38px 35px 0}.about-photo img{height:440px;border-radius:150px 150px 16px 16px}.about-photo .inset{position:absolute;right:0;bottom:0;width:43%;height:175px;border:8px solid var(--cream);border-radius:13px}.about-copy h2{font:500 clamp(32px,4vw,45px)/1.15 var(--serif);margin:12px 0 18px}.about-copy p{font-size:13px;line-height:1.9;color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:23px 0}.checks span{font-size:11px;font-weight:600}.checks span:before{content:'✦';color:var(--gold);margin-right:8px}
+.process{background:#f3e5df}.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.process-card{text-align:center;background:#fffaf7;border:1px solid #ead9d0;border-radius:14px;padding:27px 22px}.process-card b{font:26px var(--serif);color:var(--gold)}.process-card h3{font:20px var(--serif);margin:10px 0 7px}.process-card p{font-size:11px;line-height:1.7;color:var(--muted);margin:0}
+.gallery-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:190px 190px;gap:12px}.gallery-grid img{height:100%;border-radius:12px}.gallery-grid img:first-child{grid-row:span 2}
+.booking{background:linear-gradient(110deg,#2b1b1d,#503234);color:#fff8f2}.booking-inner{max-width:1030px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:30px}.booking .eyebrow{color:var(--gold2)}.booking h2{font:500 clamp(32px,4vw,45px) var(--serif);margin:12px 0}.booking p{max-width:560px;color:#e5d3c9;font-size:13px;line-height:1.8}
+.contact{background:#f7eae5}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contact-card{text-align:center;background:#fffaf7;border:1px solid var(--line);border-radius:14px;padding:24px 15px}.contact-card b{font:26px var(--serif);color:var(--gold)}.contact-card h3{font:20px var(--serif);margin:9px 0 5px}.contact-card p{font-size:11px;line-height:1.7;color:var(--muted);margin:0}
+footer{background:#211517;color:#f8ece5;padding:42px 22px 16px}.footer-grid{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:25px}.footer-grid h4{font:18px var(--serif);color:var(--gold2);margin:0 0 12px}.footer-grid p,.footer-grid a{font-size:11px;line-height:2;color:#d2beb4}.footer-brand{font:29px var(--script);color:#f0d4b5}.footer-sub{display:block;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#c5aaa0}.copyright{max-width:1120px;margin:27px auto 0;padding-top:15px;border-top:1px solid #ffffff22;display:flex;justify-content:space-between;gap:12px;color:#bba69f;font-size:10px}.whatsapp{position:fixed;right:20px;bottom:20px;width:55px;height:55px;border-radius:50%;background:#20a568;color:white;display:grid;place-items:center;font-size:25px;z-index:20;box-shadow:0 8px 22px #0003}.notice{padding:10px;text-align:center;background:#fff2d8;color:#725321;font-size:10px}
+@media(max-width:900px){.navlinks{gap:12px;font-size:11px}.service-grid{grid-template-columns:repeat(2,1fr)}.about{gap:30px}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.nav{min-height:72px;padding:10px 16px;flex-wrap:wrap}.monogram{width:42px;height:42px;font-size:24px}.brand-name{font-size:25px}.menu{display:block;margin-left:auto}.navlinks{display:none;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:8px 0 12px}.navlinks.open{display:flex}.navlinks>a{padding:12px 4px;border-top:1px solid var(--line)}.navlinks .btn{margin-top:10px}.hero{min-height:590px;background-position:62% center}.hero:before{content:'';position:absolute;inset:0;background:#fff8f2a8}.hero-inner{padding:62px 23px}.hero h1{font-size:47px}.hero p{font-size:13px}.hero-actions{align-items:flex-start;flex-direction:column}.trust-inner{grid-template-columns:repeat(2,1fr);gap:18px 8px}.section{padding:62px 17px}.service-grid{gap:12px}.service-card img{height:145px}.service-copy{padding:15px 12px}.service-copy h3{font-size:19px}.service-copy p{font-size:10px;min-height:70px}.about{grid-template-columns:1fr;gap:32px}.about-photo img{height:350px}.about-photo .inset{height:140px}.process-grid,.contact-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:160px 145px}.gallery-grid img:first-child{grid-row:span 2}.booking-inner{display:block;text-align:center}.booking p{margin:0 auto 22px}.footer-grid{grid-template-columns:1fr 1fr;gap:20px 15px}.copyright{flex-direction:column;text-align:center}}
+@media(max-width:380px){.service-grid{grid-template-columns:1fr 1fr}.service-card img{height:120px}.footer-grid{grid-template-columns:1fr}.hero h1{font-size:41px}}
+</style>
+</head>
+<body>
+<div class="topbar">✦ <span>Beleza, cuidado e bem-estar</span> · Atendimento com hora marcada ✦</div>
+<header><nav class="nav">
+<a class="brand" href="#inicio"><span class="monogram">É</span><span><span class="brand-name">Espaço Érica Magro</span><span class="brand-sub">Manicure &amp; Podologia</span></span></a>
+<button class="menu" id="menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+<div class="navlinks" id="navlinks"><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#sobre">O espaço</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a><a class="btn" href="#agendamento">Agende agora&nbsp; ↗</a></div>
+</nav></header>
+<main>
+<section class="hero" id="inicio"><div class="hero-inner">
+<div class="eyebrow">Seu momento de autocuidado</div>
+<h1>Beleza em cada detalhe. <em>Cuidado em cada toque.</em></h1>
+<p>Manicure, pedicure, podologia e alongamentos com atenção, carinho e profissionalismo. Um espaço para você se sentir bem e cuidar de si.</p>
+<div class="hero-actions"><a class="btn" href="#agendamento">♡ &nbsp; Agendar meu horário</a><a class="outline" href="#servicos">Conheça os serviços</a></div>
+<div class="hero-caption">✦ Atendimento personalizado <b>•</b> Com hora marcada</div>
+</div></section>
+<div class="trust"><div class="trust-inner"><div class="trust-item"><strong>✧</strong>Carinho em cada atendimento</div><div class="trust-item"><strong>♡</strong>Atenção individualizada</div><div class="trust-item"><strong>✿</strong>Higiene e cuidado</div><div class="trust-item"><strong>◇</strong>Beleza e bem-estar</div></div></div>
+<section class="section services" id="servicos"><div class="wrap">
+<div class="heading"><div class="eyebrow">Conheça nossos cuidados</div><h2>Serviços para você</h2><p>Escolha o cuidado que combina com seu momento. Cada serviço recebe atenção especial do início ao fim.</p></div>
+<div class="service-grid">
+<article class="service-card"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=85" alt="Mãos com unhas bem cuidadas em manicure"><div class="service-copy"><small>01 · BELEZA</small><h3>Manicure</h3><p>Unhas das mãos bem cuidadas, esmaltação e acabamento delicado.</p><a href="#agendamento">Saiba mais →</a></div></article>
+<article class="service-card"><img src="https://www.orillianailspa.ca/sites/149921/media/services/medium/toe_nail_colour_change1667328392-1.jpg" alt="Pé de cliente recebendo esmaltação nas unhas dos pés"><div class="service-copy"><small>02 · CUIDADO DOS PÉS</small><h3>Pedicure</h3><p>Cuidado e esmaltação das unhas dos pés, com conforto e delicadeza.</p><a href="#agendamento">Saiba mais →</a></div></article>
+<article class="service-card"><img src="https://www.tmfa.co/components/com_rsblog/assets/images/blog/grayfish/019c4a34-24b6-7c50-93d8-1f63ecaa2f2e.jpg" alt="Profissional de saúde usando luvas durante avaliação dos pés"><div class="service-copy"><small>03 · SAÚDE DOS PÉS</small><h3>Podologia</h3><p>Atenção especializada à saúde, higiene e conforto dos seus pés.</p><a href="#agendamento">Saiba mais →</a></div></article>
+<article class="service-card"><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=800&q=85" alt="Alongamento e esmaltação elegante nas unhas das mãos"><div class="service-copy"><small>04 · SOFISTICAÇÃO</small><h3>Alongamentos</h3><p>Alongamento de unhas para realçar seu estilo com beleza e elegância.</p><a href="#agendamento">Saiba mais →</a></div></article>
+</div></div></section>
+<section class="section" id="sobre"><div class="wrap about">
+<div class="about-photo"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=85" alt="Detalhe de unhas cuidadas em ambiente de beleza"><img class="inset" src="https://www.orillianailspa.ca/sites/149921/media/services/medium/toe_nail_colour_change1667328392-1.jpg" alt="Detalhe de pedicure e unhas dos pés"></div>
+<div class="about-copy"><div class="eyebrow">Um espaço feito para você</div><h2>Seu tempo. Seu cuidado. Sua beleza.</h2><p>No Espaço Érica Magro, cada atendimento é uma oportunidade de cuidar de você. Nossa proposta é oferecer um ambiente acolhedor, com atenção aos detalhes e dedicação em cada serviço.</p><p>Da beleza das mãos ao cuidado especializado dos pés, queremos que você se sinta bem recebida e confiante.</p><div class="checks"><span>Atendimento com hora marcada</span><span>Ambiente acolhedor</span><span>Atenção aos detalhes</span><span>Cuidado personalizado</span></div><a class="btn" href="#agendamento">Reserve seu momento ↗</a></div>
+</div></section>
+<section class="section process"><div class="wrap"><div class="heading"><div class="eyebrow">Nossa essência</div><h2>Cuidado que você sente</h2><p>Uma experiência pensada para unir beleza, acolhimento e atenção.</p></div><div class="process-grid">
+<div class="process-card"><b>01</b><h3>Atendimento atencioso</h3><p>Você é recebida com carinho e atenção às suas necessidades.</p></div>
+<div class="process-card"><b>02</b><h3>Cuidado nos detalhes</h3><p>Dedicação em cada etapa para uma experiência agradável.</p></div>
+<div class="process-card"><b>03</b><h3>Um momento seu</h3><p>Reserve um tempo para renovar a autoestima e o bem-estar.</p></div>
+</div></div></section>
+<section class="section" id="galeria"><div class="wrap"><div class="heading"><div class="eyebrow">Inspirações</div><h2>Um olhar para os detalhes</h2><p>Imagens ilustrativas para apresentar os serviços e a proposta do espaço.</p></div><div class="gallery-grid">
+<img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=85" alt="Inspiração de manicure">
+<img src="https://www.orillianailspa.ca/sites/149921/media/services/medium/toe_nail_colour_change1667328392-1.jpg" alt="Inspiração de pedicure, unhas dos pés">
+<img src="https://www.tmfa.co/components/com_rsblog/assets/images/blog/grayfish/019c4a34-24b6-7c50-93d8-1f63ecaa2f2e.jpg" alt="Profissional usando luvas em atendimento de podologia">
+<img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=800&q=85" alt="Inspiração de unhas e esmaltação">
+<img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=800&q=85" alt="Referência de cuidados de beleza"></div></div></section>
+<section class="section booking" id="agendamento"><div class="booking-inner"><div><div class="eyebrow">Vamos cuidar de você?</div><h2>Agende seu horário</h2><p>Fale com a gente pelo WhatsApp para consultar os horários disponíveis e escolher o melhor momento para seu atendimento.</p></div><a class="btn" href="https://wa.me/5587991532323?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20um%20hor%C3%A1rio%20no%20Espa%C3%A7o%20%C3%89rica%20Magro." target="_blank" rel="noopener">◉ &nbsp; Consultar horários ↗</a></div></section>
+<section class="section contact" id="contato"><div class="wrap"><div class="heading"><div class="eyebrow">Estamos à disposição</div><h2>Entre em contato</h2><p>Será um prazer conversar com você e apresentar nossos serviços.</p></div><div class="contact-grid">
+<div class="contact-card"><b>◉</b><h3>WhatsApp</h3><p>(87) 99153-2323<br>Número provisório para apresentação</p></div>
+<div class="contact-card"><b>⌖</b><h3>Localização</h3><p>Endereço do espaço<br>A confirmar</p></div>
+<div class="contact-card"><b>◎</b><h3>Instagram</h3><p>Perfil oficial<br>A inserir após aprovação</p></div>
+</div></div></section>
+</main>
+<footer><div class="footer-grid">
+<div><span class="footer-brand">Espaço Érica Magro</span><span class="footer-sub">Manicure &amp; Podologia</span><p>Beleza, cuidado e bem-estar em um só lugar.</p></div>
+<div><h4>Navegação</h4><p><a href="#inicio">Início</a><br><a href="#servicos">Serviços</a><br><a href="#sobre">O espaço</a><br><a href="#galeria">Galeria</a></p></div>
+<div><h4>Contato</h4><p><a href="https://wa.me/5587991532323">(87) 99153-2323</a><br>Atendimento com hora marcada</p></div>
+<div><h4>Redes sociais</h4><p><a href="#contato">Instagram</a><br><a href="https://wa.me/5587991532323">WhatsApp</a></p></div>
+</div><div class="copyright"><span>© <span id="year"></span> Espaço Érica Magro. Todos os direitos reservados.</span><span>Prévia visual para apresentação.</span></div></footer>
+<a class="whatsapp" href="https://wa.me/5587991532323?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Abrir WhatsApp">◉</a>
+<div class="notice">PRÉVIA VISUAL: fotos ilustrativas. O contato é provisório; endereço, redes sociais e fotos reais serão atualizados. O agendamento automático ainda não está ativo.</div>
+<script>
+const menu=document.getElementById('menu'),nav=document.getElementById('navlinks');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
